@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="main">
+        <div class="page1" id="home">
+            <div class="nav">
+                <img src="https://cdn.create.vista.com/api/media/medium/469218330/stock-vector-initial-letter-vector-logo?token="
+                    alt="">
+
+                <div class="nav2">
+                    <h4>home</h4>
+                    <h4>about</h4>
+                    <h4>projects</h4>
+                    <h4>contact</h4>
+                </div>
+                <div class="nav3">
+                   <div class="circle">
+
+                   </div>
+
+                </div>
+            </div>
+         <h1 class="one">creative designer &</h1>
+         <h1 class="two">frontend developer</h1>
+         <div class="banner" id="about">
+         <img class="beige" src="https://img.freepik.com/free-photo/gray-wall-textures-background_74190-4389.jpg" alt="">
+         <div class="banner-text">
+            <div>
+            <h4>about</h4>
+            <p>Hey there! I'm Kadeeja Sherine, a versatile developer<br>with expertise in both frontend and backend technologies.<br>While I'm proficient in the complete MERN stack, <br>my true passion lies in frontend development.<br>I thrive on bringing ideas to life through clean, user-friendly<br>interfaces and engaging experiences.With a keen<br>eye for design and a knack for problem-solving, <br>Additionally, I am dedicated to continuously learning<br>and refining my skills,staying updated with the latest <br> trends and technologies in the world of<br>development to deliver cutting-edge solutions.</p>
+            <br>
+            <p>
+                I'm excited to contribute my skills and enthusiasm  <br>to innovative projects and collaborate with<br>like-minded individuals who are equally<br>passionate in the field of development.<br> Let's connect and create something <br> 
+                extraordinary together!<br></p>
+            </div>
+                <img src="assets/6a4757a2-9e75-407d-b9f2-baafd484e380.jpg" alt="">
+
+        </div>
+        </div>
+
+
+        
+    
+    
+        </div>
+    <div class="page2" id="projects">
+        <h1>Selected Work</h1>
+        <div class="page2-one">
+            <a href="https://main--marvelous-taiyaki-b51a8e.netlify.app/"  target="_blank">
+        <img class="onee" src="assets/Screenshot 2024-03-28 at 1.00.12 PM.png" alt="">
+    </a>
+        <a href="https://urbanbite.onrender.com/" target="_blank">
+            <img class="oneee" src="assets/Screenshot 2024-03-28 at 1.29.03 PM.png" alt="">
+            
+        </a>
+        </div>
+       
+    </div>
+    
+
+    <div class="page4" id="contact">
+        
+        <section id="contact">
+<p class="section_text">Get in Touch</p>
+<h1 class="title">Contact Me</h1>
+<div class="contact-info-upper-container">
+<div class="contact-info-container">
+<img
+src="assets/mail-300.png"
+alt="Email icon"
+class="email-icon"
+/>
+<p><a href="mailto:kadeejasherine4@gmail.com">kadeejasherine4@gmail.com</a></p>
+</div>
+<div class="contact-info-container">
+<img
+src="assets/linkedin3.jpeg"
+alt="LinkedIn icon"
+class="email-icon"/>
+<p><a href="https://www.linkedin.com/in/kadeeja-sherine-797b03212?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3vP%2BePwaS32GdhjshLqKkw%3D%3D">LinkedIn</a></p>
+</div>
+<div class="contact-info-container">
+    <img
+    src="assets/github-512.webp"
+    alt="GitHub icon"
+    class="email-icon"/>
+    <p><a href="https://github.com/Kadeejasherine">GitHub</a></p>
+    </div>
+</div>
+</section>
+<footer>
+    <p>Copyright &#169; 2024 kadeejasherine. All Rights Reserved.</p>
+</footer>
+    </div>
+
+
+
+
+
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const locoScroll = new LocomotiveScroll({
+                el: document.querySelector('.main'), 
+                smooth: true
+            });
+    
+            
+            const navLinks = document.querySelectorAll('.nav2 h4');
+    
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+    
+                    const targetId = this.textContent.toLowerCase();
+                    const targetSection = document.getElementById(targetId);
+    
+                    if (targetSection) {
+                        locoScroll.scrollTo(targetSection);
+                    }
+                });
+            });
+        });
+    </script>
+    
+    
+    
+</body>
+
+</html>
